@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <title>marketna-login-signup</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand"  href="#" >
+            <img src="images/logo.jpg" width="40" height="40">
+            <b><i>Marketna</i></b>
+        </a>
+        <button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="navigationcontent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigationcontent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">groceries</a>
+                    <a class="dropdown-item" href="#">dairy products</a>
+                    <a class="dropdown-item" href="#">fresh fruits</a>
+                    <a class="dropdown-item" href="#">juices and immunity shots</a>
+                    <a class="dropdown-item" href="#">chicken products</a>
+                    <a class="dropdown-item" href="#">meat products</a>
+                  </div>
+
+                 </li>
+                
+            </ul>
+            
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+    </nav>
+    <div class="container">
+            
+        <div class="row row-content allign-items-center ">
+                     <div class='col-12  col-sm-8  offset-sm-2'>
+                       <div class="card"  id="id4"  >
+                           <h5 class="card-header"><b>Sign Up</b></h5>
+                           <div class="card-body">
+                           <form>
+                                   <div class="form-group row">
+                                           <label for="firstname">First Name</label>
+                                           <input id="firstname" class="form-control" type="text" >
+                                    </div>
+                                    <div class="form-group row">
+                                       <label for="lastname">Last Name</label>
+                                       <input id="lastname" class="form-control" type="text" >
+                                </div>
+                                <div class="form-group row">
+                                   <label for="email">E-mail</label>
+                                   <input id="email" class="form-control" type="text" >
+                            </div>
+                                    <div class="form-group row">
+                                          <label for="password">password</label>
+                                          <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <div class="form-group row">
+                                       <label for="password2">Retype password</label>
+                                       <input type="password" class="form-control" id="password2">
+                                 </div>
+     
+        
+                                    <div class="form-row">
+                                          <button type="submit" class="btn btn-primary  " >Sign Up</button>
+                                     </div>
+                                  
+                             </form>
+                            
+                             <h5>Already a user ?</h5>
+                             <button onclick="asd(2)" id="id3" type="button" class=" btn btn-primary">Log in</button>
+    
+                            </div>
+                      </div>
+                           <div class="card " id="id2">
+                                       <h5 class="card-header"><b>Log In</b></h5>
+                                       <div class="card-body">
+                                       <form>
+                                               <div class="form-group row">
+                                                       <label for="email">E-mail</label>
+                                                       <input id="email" class="form-control" type="text" placeholder="Type your email here">
+                                                </div>
+                                                <div class="form-group row">
+                                                      <label for="password">password</label>
+                                                      <input type="password" class="form-control" id="password" placeholder="Type your password here">
+                                                </div>
+                    
+                                                <div class="form-row">
+                                                      <button type="submit" class="btn btn-primary  " >Log In</button>
+                                                 </div>
+                                              <div class="form-group row">
+                                                     <div class="form-check">
+                                                           <input class="form-check-input" type="checkbox">
+                                                          <label class="form-check-label"> Remember me </label>
+                                                     </div>
+                                                </div>
+                                         </form>
+                                        
+                                         <h5>not a user ?</h5>
+                                         <button onclick="asd(1)" type="button" id="id1"  class="btn btn-primary">Sign up</button>
+                
+                                        </div>
+                                  </div>
+                            </div>
+                       </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+     <script>
+        $("document").ready(function(){
+                $("#id4").hide();
+                       });
+    </script>
+     <script src="./main.js"></script> 
+</body>
+</html>

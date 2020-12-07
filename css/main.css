@@ -1,0 +1,33 @@
+body {
+    background: url("../images/background.jpg") no-repeat center fixed;
+    background-size: cover;
+  }       
+.navbar{
+    background-color: rgb(253, 165, 155);
+}
+.jumbotron{
+    background-color: rgb(240, 131, 119);
+}
+.card{
+    padding : 10px ;
+    margin : 10px ;
+    border: 5px outset salmon;
+    background-color: rgb(253, 165, 155) ;
+    transition: width 2s, height 2s;
+}
+.card:hover{
+    width:100%;
+    height:100%;
+}
+.modal-header{
+    background-color: rgb(240, 131, 119) ;
+}
+.card-header{
+    background-color: rgb(240, 131, 119) ;
+}
+.modal-body{
+    background-color: rgb(253, 165, 155) ;
+}
+.modal-footer{
+    background-color: rgb(253, 165, 155) ;
+}

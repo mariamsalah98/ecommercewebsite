@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+   <link rel="stylesheet" href="css/main.css">
+    <title>Juices and Immunity Shots</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand"  href="#" >
+            <img src="images/logo.jpg" width="40" height="40">
+            <b><i>Marketna</i></b>
+        </a>
+        <button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="navigationcontent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigationcontent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" type="button" data-toggle="modal" data-target="#balanceModal" href="#">My Balance</a> 
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">My cart</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      My products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" data-toggle="modal" data-target="#productModal" href="#">Add product</a>
+                      <a class="dropdown-item" href="">My added products</a>
+                    </div>
+  
+                   </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./groceries.html">groceries</a>
+                    <a class="dropdown-item " href="./dairyproducts.html">dairy products</a>
+                    <a class="dropdown-item" href="./fruits.html">fresh fruits</a>
+                    <a class="dropdown-item active" href="#">juices and immunity shots</a>
+                    <a class="dropdown-item " href="./chickenproducts.html">chicken products</a>
+                    <a class="dropdown-item" href="./meatproducts.html">meat products</a>
+                  </div>
+
+                 </li>
+                
+            </ul>
+            
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+    </nav>
+    <div class="modal"id="balanceModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Balance</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div>current Balance : <span id="balance">0</span></div>
+              <form>
+                  <div class="form-group-row">
+                      
+                    <label for="balanceadd">Balance you wish to add</label>
+                    <input type="number" class="form-control" id="balanceadd" value="">
+                  </div>
+              </form>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="balancebutton" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal"id="productModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add product</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="form-group-row">
+                      
+                      <label for="productname">Product Name</label>
+                      <input type="text" class=" form-control" id="productname" value="">
+                  </div>
+                    <div class="form-group-row">
+                      
+                    <label  for="productprice">Price (LE)</label>
+                      <input type="number" class=" form-control" id="productprice" value="">
+                  </div>
+                  <div class="form-group-row">
+                      
+                      <label  for="productcategory">Category</label>
+                      <select name="productcategory" id="productcategory">
+                        <option value="dairyproduct">Dairy products</option>
+                        <option value="meatproduct">Meat products</option>
+                        <option value="chickenproduct">Chicken roducts</option>
+                        <option value="fruits">fruits</option>
+                        <option value="groceries">groceries</option>
+                        <option value="juices">Juices & Immunity Shots</option>
+                      </select>
+                  </div>
+                  <div class="form-group-row">
+                      
+                    <label  for="productimage">Image</label>
+                    <input type="image" class=" form-control" id="productimage" value="">
+                  </div>
+              </form>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="balancebutton" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
